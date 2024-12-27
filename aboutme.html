@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Data Science Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>About Me</title>
     <style>
         body {
-            background-image: url('https://source.unsplash.com/featured/?technology,code');
+            background-image: url('https://source.unsplash.com/featured/?data,technology');
             background-size: cover;
             background-attachment: fixed;
             font-family: Arial, sans-serif;
@@ -23,7 +22,6 @@
             border-radius: 10px;
         }
         h1, h2 {
-            text-align: center;
             color: #ffcc00;
         }
         nav {
@@ -41,25 +39,26 @@
         nav a:hover {
             background-color: #ffaa00;
         }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: rgba(0, 0, 0, 0.9);
-            color: white;
+        ul {
+            list-style: square;
+            padding-left: 20px;
         }
     </style>
 </head>
 <body>
-    <header class="container">
-        <h1>Welcome to My Portfolio</h1>
-        <p>I am an aspiring Data Scientist with a Master's degree in Data Science and 14 years of IT experience.</p>
-    </header>
-    <nav>
-        <a href="aboutme.html">About Me</a>
-        <a href="project.html">Projects</a>
-    </nav>
-    <footer>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/anand-dataanalyst/" style="color: #ffcc00;">LinkedIn</a>.</p>
-    </footer>
+    <div class="container">
+        <h1>About Me</h1>
+        <p>I am a passionate Data Scientist with expertise in programming, visualization, and AI technologies.</p>
+        <h2>Skills</h2>
+        <ul>
+            <li>Python, SQL, R</li>
+            <li>Data Visualization: Power BI, Tableau</li>
+            <li>AI & Machine Learning</li>
+        </ul>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="project.html">Projects</a>
+        </nav>
+    </div>
 </body>
 </html>
