@@ -3,96 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+    <title>My Data Science Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
+            background-image: url('https://source.unsplash.com/featured/?technology,code');
+            background-size: cover;
+            background-attachment: fixed;
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            color: #fff;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
         }
-        header {
-            background: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-            margin: 20px auto;
+        .container {
             max-width: 800px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 50px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
         }
         h1, h2 {
-            color: #4CAF50;
+            text-align: center;
+            color: #ffcc00;
         }
-        ul {
-            padding-left: 20px;
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #ffaa00;
         }
         footer {
             text-align: center;
             padding: 10px 0;
-            background: #f1f1f1;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>About Me</h1>
-</header>
-
-<section>
-    <h2>Professional Background</h2>
-    <p>
-        With a Masters degree in Data Science and a passion for technology, I have worked across diverse industries such as healthcare, retail, telecom, automobile, and insurance. I bring years of experience in development, testing, support, and project management. 
-        My expertise spans industries such as healthcare, retail, telecom, automobile, and insurance, including collaborations with Fortune 500 clients.
-    </p>
-    <p>
-        Previously, I served as a Team Lead in India before transitioning to New Zealand to specialize in AI and data-related roles while exploring a new culture and environment.
-    </p>
-</section>
-
-<section>
-    <h2>Technical Skills</h2>
-    <ul>
-        <li>Programming: Python, SQL</li>
-        <li>Database Management: Oracle, DB2</li>
-        <li>ETL: Informatica</li>
-        <li>Reporting & Visualization: Power BI, DAX, SSRS, SSIS, SSAS</li>
-        <li>Data Warehousing & Advanced Analytics</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Soft Skills</h2>
-    <ul>
-        <li>Problem-solving</li>
-        <li>Teamwork</li>
-        <li>Adaptability</li>
-        <li>Communication</li>
-        <li>Creativity</li>
-        <li>Resilience</li>
-        <li>Leadership</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Hobbies & Interests</h2>
-    <p>
-        Outside of work, I enjoy swimming, traveling, and playing cricket and chess. 
-        Exploring the Canterbury region and cities like Auckland and Wellington has been an enriching experience.
-    </p>
-</section>
-
-<footer>
-    <p>Want to connect or collaborate? Check out my <a href="https://www.linkedin.com/in/anand-data-wrangler/">Linkedin profile</a>.</p>
-</footer>
-
+    <header class="container">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I am an aspiring Data Scientist with a Master's degree in Data Science and 14 years of IT experience.</p>
+    </header>
+    <nav>
+        <a href="aboutme.html">About Me</a>
+        <a href="project.html">Projects</a>
+    </nav>
+    <footer>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/anand-dataanalyst/" style="color: #ffcc00;">LinkedIn</a>.</p>
+    </footer>
 </body>
 </html>
-
