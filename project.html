@@ -4,63 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
-    <style>
-        body {
-            background-image: url('https://source.unsplash.com/featured/?projects,data');
-            background-size: cover;
-            background-attachment: fixed;
-            font-family: Arial, sans-serif;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-        }
-        h1, h2 {
-            color: #ffcc00;
-        }
-        .project {
-            margin-bottom: 20px;
-        }
-        nav {
-            text-align: center;
-            margin: 20px 0;
-        }
-        nav a {
-            margin: 0 10px;
-            padding: 10px 20px;
-            background-color: #ffcc00;
-            color: black;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        nav a:hover {
-            background-color: #ffaa00;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>My Projects</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Featured Projects</h2>
         <div class="project">
-            <h2>Data Analysis Project</h2>
-            <p>An advanced project showcasing insights with Python and Power BI.</p>
-            <a href="https://github.com/Anandsgithub/project1" style="color: #ffcc00;">View on GitHub</a>
+            <h3>Project 1: Data Analysis</h3>
+            <p>Advanced data visualization and insights using Python and Power BI.</p>
+            <p><a href="https://github.com/Anandsgithub/project1" target="_blank">View Repository</a></p>
         </div>
+
         <div class="project">
-            <h2>ETL Pipeline</h2>
-            <p>Streamlining data pipelines with Informatica and Oracle.</p>
-            <a href="https://github.com/Anandsgithub/project2" style="color: #ffcc00;">View on GitHub</a>
+            <h3>Project 2: ETL Pipeline</h3>
+            <p>Processed large datasets with Informatica and Oracle.</p>
+            <p><a href="https://github.com/Anandsgithub/project2" target="_blank">View Repository</a></p>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="aboutme.html">About Me</a>
-        </nav>
     </div>
+
+    <footer>
+        <p>Check out more on my <a href="https://github.com/Anandsgithub">GitHub</a>.</p>
+    </footer>
 </body>
 </html>
