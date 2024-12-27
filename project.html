@@ -3,154 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+    <title>Projects</title>
     <style>
         body {
+            background-image: url('https://source.unsplash.com/featured/?projects,data');
+            background-size: cover;
+            background-attachment: fixed;
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+            color: #fff;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
         }
-        header {
-            background: #4CAF50;
-            color: white;
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
             padding: 20px;
-            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
         }
-        .filter {
+        h1, h2 {
+            color: #ffcc00;
+        }
+        .project {
+            margin-bottom: 20px;
+        }
+        nav {
             text-align: center;
             margin: 20px 0;
         }
-        .filter button {
-            margin: 5px;
+        nav a {
+            margin: 0 10px;
             padding: 10px 20px;
-            background: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        .filter button:hover {
-            background: #45a049;
-        }
-        section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-        }
-        .project {
-            width: 300px;
-            margin: 10px;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeIn 0.6s forwards;
-        }
-        .project h3 {
-            color: #4CAF50;
-        }
-        .tags span {
-            display: inline-block;
-            background: #4CAF50;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            margin: 5px;
-            font-size: 0.9em;
-        }
-        .project a {
-            color: #4CAF50;
+            background-color: #ffcc00;
+            color: black;
             text-decoration: none;
-            font-weight: bold;
+            border-radius: 5px;
         }
-        .project a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #f1f1f1;
-        }
-        @keyframes fadeIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        nav a:hover {
+            background-color: #ffaa00;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>My Projects</h1>
-    <p>Filter by category to explore my work.</p>
-</header>
-
-<div class="filter">
-    <button onclick="filterProjects('all')">All</button>
-    <button onclick="filterProjects('Data Analysis')">Data Analysis</button>
-    <button onclick="filterProjects('ETL')">ETL</button>
-    <button onclick="filterProjects('AI')">AI</button>
-</div>
-
-<section id="project-list">
-    <div class="project" data-category="Data Analysis">
-        <h3>Project Title 1</h3>
-        <p><strong>Description:</strong> A project focused on advanced data visualization and insights.</p>
-        <p><strong>Technologies:</strong> Python, Power BI, SQL</p>
-        <div class="tags">
-            <span>Data Analysis</span>
-            <span>Visualization</span>
+    <div class="container">
+        <h1>My Projects</h1>
+        <div class="project">
+            <h2>Data Analysis Project</h2>
+            <p>An advanced project showcasing insights with Python and Power BI.</p>
+            <a href="https://github.com/Anandsgithub/project1" style="color: #ffcc00;">View on GitHub</a>
         </div>
-        <p><a href="https://github.com/Anandsgithub/my-portfolio/project1" target="_blank">View Repository</a></p>
-    </div>
-
-    <div class="project" data-category="ETL">
-        <h3>Project Title 2</h3>
-        <p><strong>Description:</strong> An ETL pipeline for processing large datasets.</p>
-        <p><strong>Technologies:</strong> Informatica, Oracle, DB2</p>
-        <div class="tags">
-            <span>ETL</span>
-            <span>Data Warehousing</span>
+        <div class="project">
+            <h2>ETL Pipeline</h2>
+            <p>Streamlining data pipelines with Informatica and Oracle.</p>
+            <a href="https://github.com/Anandsgithub/project2" style="color: #ffcc00;">View on GitHub</a>
         </div>
-        <p><a href="https://github.com/Anandsgithub/my-portfolio/project2" target="_blank">View Repository</a></p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+        </nav>
     </div>
-
-    <div class="project" data-category="AI">
-        <h3>Project Title 3</h3>
-        <p><strong>Description:</strong> An AI chatbot for enhancing customer interactions.</p>
-        <p><strong>Technologies:</strong> Python, Flask, NLP</p>
-        <div class="tags">
-            <span>AI</span>
-            <span>Chatbot</span>
-        </div>
-        <p><a href="https://github.com/Anandsgithub/my-portfolio/project3" target="_blank">View Repository</a></p>
-    </div>
-</section>
-
-<footer>
-    <p>Check out my <a href="https://github.com/your-username">GitHub profile</a> for more projects!</p>
-</footer>
-
-<script>
-    function filterProjects(category) {
-        const projects = document.querySelectorAll('.project');
-        projects.forEach(project => {
-            if (category === 'all' || project.getAttribute('data-category') === category) {
-                project.style.display = 'block';
-            } else {
-                project.style.display = 'none';
-            }
-        });
-    }
-</script>
-
 </body>
 </html>
