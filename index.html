@@ -7,103 +7,59 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
-            background-image: url('https://unsplash.com/photos/graphical-user-interface--WXQm_NTK0U');
+            background-image: url('https://source.unsplash.com/featured/?technology,code');
             background-size: cover;
             background-attachment: fixed;
             font-family: Arial, sans-serif;
-            color: #333;
+            color: #fff;
             margin: 0;
             padding: 0;
         }
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 50px auto;
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
+            background-color: rgba(0, 0, 0, 0.7);
             border-radius: 10px;
-        }
-        header, section, footer {
-            margin-bottom: 20px;
         }
         h1, h2 {
             text-align: center;
-            color: #2c3e50;
+            color: #ffcc00;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #3498db;
-        }
-        .grid {
-            display: flex;
-            justify-content: space-around;
-        }
-        .grid-item {
-            flex: 1;
+        nav {
             text-align: center;
-            margin: 10px;
+            margin: 20px 0;
         }
-        .portfolio-link {
-            display: block;
-            padding: 10px;
-            background-color: #3498db;
-            color: white;
+        nav a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #ffcc00;
+            color: black;
+            text-decoration: none;
             border-radius: 5px;
-            text-decoration: none;
         }
-        .portfolio-link:hover {
-            background-color: #2980b9;
+        nav a:hover {
+            background-color: #ffaa00;
         }
-        footer p {
+        footer {
             text-align: center;
-        }
-        footer a {
-            color: #3498db;
+            padding: 10px 0;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Welcome to My Data Science Portfolio</h1>
-            <p>
-                I am an aspiring Data Scientist with a Master's degree in Data Science and 14 years of IT experience. After leading a team in India, I transitioned to AI and data roles, exploring a new country and culture. I've visited many places in Canterbury, Auckland, and Wellington. I'm confident in my ability to contribute to your team.
-            </p>
-        </div>
+    <header class="container">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I am an aspiring Data Scientist with a Master's degree in Data Science and 14 years of IT experience.</p>
     </header>
-    <section id="experience">
-        <div class="container">
-            <h2>Experience Across Various Industries</h2>
-            <p>
-                In previous roles, I've collaborated with Fortune 500 clients in healthcare, retail, telecom, automobile, and insurance sectors. My skills include Python, SQL, Oracle, DB2, and ETL tools like Informatica. I've streamlined data processing with Power BI, SQL, and DAX, and developed reporting structures using SSRS, SSIS, and SSAS.
-            </p>
-        </div>
-    </section>
-    <section id="portfolio">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <div class="grid">
-                <div class="grid-item">
-                    <a href="aboutme.html" class="portfolio-link">About Me</a>
-                </div>
-                <div class="grid-item">
-                    <a href="project.html" class="portfolio-link">Projects</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <nav>
+        <a href="aboutme.html">About Me</a>
+        <a href="project.html">Projects</a>
+    </nav>
     <footer>
-        <div class="container">
-            <p>Connect with me on <a href="https://www.linkedin.com/in/anand-dataanalyst/">LinkedIn</a></p>
-        </div>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/anand-dataanalyst/" style="color: #ffcc00;">LinkedIn</a>.</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
